@@ -1,0 +1,263 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  
+  /*GRID*/
+  .container {
+    max-width: 100rem;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  /*HEADER*/
+  .header {
+    background: black;
+    margin: 0rem 33.5rem 0rem 33.5rem ;
+  }
+  .header .branding {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid white  ;
+  }
+  .header .header__nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    padding-top: 2rem;
+  }
+  .header .header__nav a {
+    color: #e5dbd9;
+  }
+  /* @media screen and (max-width: 518px){
+    .header {
+
+      }
+  } */
+
+.content .content__wrapper .content__image {
+    display: flex;
+    justify-content: center;
+}
+
+.more{
+    margin: 0rem 33.5rem 0rem 33.5rem ;
+}
+.more img {
+    position: absolute;
+}
+.more .more__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.more .more__text {
+    position: relative;
+    text-align: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+}
+.more .more__text h4{
+    color: #134f5c;
+    font-size: 5rem;
+    font-weight: 700;
+}
+.more .more__text h3{
+    color: #134f5c;
+    font-size: 5rem;
+}
+.more .more__text h2{
+    color: #134f5c;
+    font-size: 3rem;
+    font-weight: 550;
+    text-decoration: underline;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.more .more__text h1{
+    color: #134f5c;
+}
+.more .more__btn {
+    position: relative;
+    text-align: center;
+    color: #134f5c; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.more .more__btn a {
+    color: #e5dbd9;
+    background-color: #134f5c;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.more .more__bottom img {
+    width: 5rem;
+    height: 5rem;
+}
+.more .more__bottom {
+    display: flex;
+    justify-content: center;
+}
+.more .more__bottom h1 {
+    position: relative;
+    color: #134f5c; 
+    padding-top: 5.5rem;
+    padding-bottom: 4rem;
+}
+
+.content2 .content2__wrapper .content2__image {
+    display: flex;
+    justify-content: center;
+}
+
+.why {
+    background: #e5dbd9;
+    margin: 0rem 33.5rem 0rem 33.5rem ;
+}
+.why .why__text {
+    text-align: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.why .why__text h4 {
+    color: #134f5c;
+    font-size: 3rem;
+}
+.why .why__text ul li a{
+    color: #134f5c;
+    font-size: 2rem;
+}
+.why .why__text ul li{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.why .why__text ul li:first-child {
+    border-bottom: 1px solid #134f5c;
+}
+.why .why__text ul li:last-child {
+    border-top: 1px solid #134f5c ;
+}
+
+.footer {
+    background: black;
+    margin: 0rem 33.5rem 0rem 33.5rem ;
+}
+.footer .footer__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
